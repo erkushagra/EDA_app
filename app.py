@@ -33,7 +33,6 @@ if uploaded_file is not None:
 else:
     st.info('Awaiting for CSV file to be uploaded.')
     if st.button('Press to use Example Dataset'):
-        # Example data
         @st.cache
         def load_data():
             a = pd.DataFrame(
